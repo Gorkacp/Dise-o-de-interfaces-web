@@ -1,0 +1,24 @@
+/* Estilos generales para la sección */
+section {
+    font-size: 1.5em; /* Tamaño base para la sección */
+}
+
+/* Estilos para elementos de lista */
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside; /* Muestra los viñetas dentro del contenedor */
+}
+
+li {
+    font-size: 1em; /* Igual al tamaño de fuente del contenedor */
+}
+
+/* Tamaño más pequeño para las listas anidadas */
+ol ol li, ul li {
+    font-size: 1em; /* Tamaño un poco más pequeño */
+}
+
+ul li {
+    margin-left: 1em; /* Añadir un margen a la izquierda para mejorar la visualización */
+}

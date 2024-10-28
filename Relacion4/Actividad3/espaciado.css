@@ -1,0 +1,18 @@
+body {
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar rellenos predeterminados */
+}
+
+h1 {
+    text-align: center; /* Centrar el encabezado */
+    margin-bottom: 50px; /* Mantener la lista al menos 50 píxeles del encabezado */
+}
+
+ol, ul {
+    padding-left: 20px; /* Espacio de 20 píxeles desde el borde izquierdo */
+    margin-top: 10px; /* Espacio de 10 píxeles entre elementos */
+}
+
+ol li, ul li {
+    margin-bottom: 10px; /* Espacio de 10 píxeles entre elementos de la lista */
+}

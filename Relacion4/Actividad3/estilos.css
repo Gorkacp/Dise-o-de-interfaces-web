@@ -1,0 +1,22 @@
+h1 {
+    font-family: Arial, sans-serif; /* Fuente diferente para el encabezado */
+    color: rgb(255, 11, 11); /* Color rojo oscuro para el texto del encabezado */
+}
+
+ol {
+    font-family: 'Verdana', sans-serif; /* Fuente no serif para la lista */
+}
+
+ul {
+    background-color: rgb(250, 250, 16); /* Fondo amarillo claro para la lista desordenada */
+}
+
+ul li {
+    background-color: rgb(168, 166, 166); /* Fondo gris para cada elemento de la lista */
+    list-style-type: square; /* Puntos de viñeta cuadrada */
+}
+
+/* Para la tercera lista con viñetas de imagen */
+ul li {
+    list-style-image: url('testimonials-1.jpg'); 
+}

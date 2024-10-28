@@ -1,0 +1,77 @@
+/* Estilos generales */
+* {
+    margin: 0; /* Elimina el margen de todos los elementos */
+    padding: 0; /* Elimina el padding de todos los elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total de los elementos */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente del cuerpo */
+    background-color: #f0f0f0; /* Color de fondo del cuerpo */
+    display: flex; /* Utiliza Flexbox para centrar los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos hijos */
+    align-items: center; /* Centra verticalmente los elementos hijos */
+    height: 100vh; /* Altura del cuerpo al 100% de la ventana */
+}
+
+#testimonials {
+    display: flex; /* Utiliza Flexbox para centrar la sección */
+    justify-content: center; /* Centra horizontalmente los elementos hijos */
+    align-items: center; /* Centra verticalmente los elementos hijos */
+}
+
+.testimonials__card {
+    position: relative; /* Permite el posicionamiento absoluto de elementos dentro de la tarjeta */
+    width: 300px; /* Ancho fijo de la tarjeta */
+    height: 330px; /* Altura fija de la tarjeta */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde de la tarjeta */
+    border-radius: 10px; /* Esquinas redondeadas de la tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la tarjeta */
+}
+
+/* Imagen de la tarjeta */
+.testimonials__card--img img {
+    width: 100%; /* La imagen ocupa el 100% del ancho de la tarjeta */
+    height: 100%; /* La imagen ocupa el 100% de la altura de la tarjeta */
+    object-fit: cover; /* La imagen se recorta para llenar el contenedor sin distorsionarse */
+}
+
+/* Contenido de la tarjeta */
+.testimonials__card--content {
+    position: absolute; /* Permite posicionar el contenido sobre la imagen */
+    bottom: 0; /* Alinea el contenido al fondo de la tarjeta */
+    width: 100%; /* Ancho del contenido igual al de la tarjeta */
+}
+
+/* Superposición de contenido */
+.content-overlay {
+    background-color: rgba(133, 146, 133, 0.7); /* Color de fondo verde semitransparente */
+    padding: 10px 20px; /* Espaciado interno en el cuadro verde */
+    border-radius: 0 0 10px 10px; /* Esquinas redondeadas en la parte inferior del cuadro */
+    transition: transform 1.0s ease-in-out; /* Transición suave para el efecto de hover */
+    transform: translateY(0); /* Muestra el cuadro verde inicialmente */
+}
+
+/* Estilos del título y párrafo */
+.testimonials__card--content__title {
+    color: #fff; /* Color del texto del título en blanco */
+    font-size: 1.5rem; /* Tamaño de fuente del título */
+    margin-bottom: 5px; /* Margen inferior del título */
+}
+
+.testimonials__card--content__para {
+    color: #fff; /* Color del texto del párrafo en blanco */
+    font-size: 1rem; /* Tamaño de fuente del párrafo */
+}
+
+/* Efectos de hover */
+.testimonials__card:hover .content-overlay {
+    transform: translateY(0); /* Mantiene el cuadro verde en su lugar al hacer hover */
+}
+
+
+/* Al hacer hover, mueve el cuadro verde hacia arriba */
+.testimonials__card:hover .content-overlay {
+    transform: translateY(-50%); /* Desplaza el cuadro verde hacia arriba al hacer hover */
+    padding-bottom: 0; /* Elimina el padding en la parte inferior al hacer hover */
+}

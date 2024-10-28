@@ -1,0 +1,52 @@
+/* General styles */
+div {
+    border: 2px solid #333;
+    background-color: #ddd;
+}
+p {
+    font-size: 2rem;
+    background-color: #888;
+    width: 50%;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 0.5rem;
+    box-sizing: border-box; /* Para que incluyan el borde y contorno en el tamaño */
+}
+
+/* New class for background-clip */
+.clip-content {
+    background-clip: content-box;
+}
+
+/* Default border and outline styles */
+.borde {
+    border: 2px solid blueviolet;
+}
+.contorno {
+    outline: 2px solid blueviolet;
+}
+
+/* Rule for consistent size (same width and box sizing) */
+p {
+    width: 50%; /* Ambos párrafos tienen el mismo tamaño */
+    box-sizing: border-box; /* Incluir padding y border en el cálculo */
+}
+
+/* Adaptable borders for desktop and mobile */
+@media (min-width: 768px) {
+    .borde {
+        border-width: 4px;
+    }
+    .contorno {
+        outline-width: 4px;
+    }
+}
+
+@media (max-width: 767px) {
+    .borde {
+        border-width: 1px;
+    }
+    .contorno {
+        outline-width: 1px;
+    }
+}
